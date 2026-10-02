@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  command = "echo Static site ready"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    X-Frame-Options = "DENY"
